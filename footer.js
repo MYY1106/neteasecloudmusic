@@ -100,8 +100,8 @@ setInterval(function () {
     nowtimesecond = nowtimesecond > 9 ? nowtimesecond : '0' + nowtimesecond
     nowtimeminute = nowtimeminute > 9 ? nowtimeminute : '0' + nowtimeminute
     document.querySelector('.currenttime').innerHTML = `${nowtimeminute}:${nowtimesecond} `
-    if (currentTime == nowtime)
-        document.querySelector('.playandstopbtn').src = './pic/stopbtn.jpg';
+    if (document.querySelector('.audio').currentTime == document.querySelector('.audio').duration)
+        document.querySelector('.playandstopbtn').src = './pic/playbtn.jpg';
 })
 progressballrun = setInterval(() => {
     document.querySelector('.progressball').style.left = 524 + (document.querySelector('.audio').currentTime / document.querySelector('.audio').duration) * 383 + 'px'
