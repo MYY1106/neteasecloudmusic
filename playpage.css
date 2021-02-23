@@ -1,0 +1,160 @@
+.playpage{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 1440px;
+    height: 624px;
+    display: none;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.playpagealsin{
+    font-size: 11px;
+    position: absolute;
+    left: 731px;
+    top: 73px;
+}
+.playpagesongname{
+    font-size: 22px;
+    color: #313131;
+    position: absolute;
+    left: 731px;
+    top: 34px;
+}
+.playpagesinger1{
+    color: #585858;
+}
+.playpagealbumname1{
+    color: #585858;
+}
+.playpagesinger{
+    color: #6d839a;
+}
+.playpagealbumname{
+    color: #6d839a;
+}
+.cd{
+    height: 324px;
+    border-radius: 50%;
+    position: absolute;
+    left: 284px;
+    top: 54px;
+    animation: rotateArround 20s linear 0s infinite;
+    -webkit-animation: rotateArround 20s linear 0s infinite;
+    -moz-animation: rotateArround 20s linear 0s infinite;
+    -ms-animation: rotateArround 20s linear 0s infinite;
+    -o-animation: rotateArround 20s linear 0s infinite;
+}
+.kaiguancenter{
+    position: absolute;
+    left: 429px;
+    z-index: 2000;
+    box-shadow: #313131;
+    height: 64px;
+}
+.kaiguan1{
+    height: 64px;
+    position: absolute;
+    left: 431px;
+    animation: action2 2s linear infinite;
+    animation-iteration-count: 1;
+    z-index: 1000;
+    animation-fill-mode: forwards;
+}
+@keyframes action2 {
+    from {
+        transform-origin: left top;
+        transform: rotate(30deg);
+    }
+    to {
+        transform-origin: left top;
+        transform: rotate(0deg);
+    }
+}
+.kaiguan{
+    height: 64px;
+    position: absolute;
+    left: 431px;
+    animation: action 2s linear infinite;
+    animation-iteration-count: 1;
+    z-index: 1000;
+    animation-fill-mode: forwards;
+}
+@keyframes action {
+    from {
+        transform-origin: left top;
+        transform: rotate(0deg);
+    }
+    to {
+        transform-origin: left top;
+        transform: rotate(30deg);
+    }
+}
+.playpagepic{
+    border-radius: 50%;
+    position: absolute;
+    width: 210px;
+    left: 340px;
+    top: 113px;
+    animation: rotateArround 20s linear 0s infinite;
+    -webkit-animation: rotateArround 20s linear 0s infinite;
+    -moz-animation: rotateArround 20s linear 0s infinite;
+    -ms-animation: rotateArround 20s linear 0s infinite;
+    -o-animation: rotateArround 20s linear 0s infinite;
+}
+@keyframes rotateArround {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@-webkit-keyframes rotateArround {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotateArround {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-ms-keyframes rotateArround {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotateArround {
+    from {
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+.pause {
+    animation-play-state: paused;
+}
+.lyric{
+    font-size: 12px;
+    color: #6b6b6b;
+    position: absolute;
+    left: 730px;
+    top: 105px;
+    line-height: 34px;
+    height: 290px;
+    overflow-y:scroll;
+    width: 385px;
+}

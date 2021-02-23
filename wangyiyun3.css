@@ -1,0 +1,172 @@
+.playandstopbtn {
+    height: 36px;
+    width: 36px;
+}
+
+.playfun {
+    position: absolute;
+    left: 660px;
+    width: 120px;
+    height: 36px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lastsongbtn {
+    height: 11px;
+    width: 10px;
+}
+
+.nextsongbtn {
+    height: 11px;
+    width: 10px;
+}
+.footsongdetail{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 450px;
+    height: 72px;
+    color: #353536;
+}
+.footimg{
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+.footsongname{
+    font-size: 13px;
+    position: absolute;
+    left: 72px;
+    top: 19px;
+}
+.footsinger{
+    font-size: 12px;
+    position: absolute;
+    left: 72px;
+    top: 45px;
+}
+.progress{
+    position: absolute;
+    left: 493px;
+    top: 51px;
+    width: 454px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.currenttime{
+    font-size: 5px;
+    color: #a3a3a4;
+}
+.progressbar{
+    display: inline-block;
+    height: 5px;
+    width: 392px;
+    border-radius: 2px;
+    background-color: #ff4e4e;
+    margin-top: 6px;
+}
+.progressball {
+    background-color: rgb(236, 65, 65);
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    position: absolute;
+    left: 524px;
+    top: 55px;
+}
+.songtime{
+    font-size: 5px;
+    color: #a3a3a4;
+}
+.laba {
+    width: 15px;
+    height: 19px;
+    position: absolute;
+    left: 1294px;
+    top: 26px;
+}
+.huatiao {
+    width: 57px;
+    background: #ff4e4e;
+    border-radius: 2px;
+    height: 4px;
+    position: absolute;
+    left: 1319px;
+    top: 34px;
+}
+.ball {
+    display: inline-block;
+    background: #ee3e48;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    left: 1345px;
+    top: 32px;
+}
+.playground{ 
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    margin: auto;
+    width: 1100px;
+    height: 548px;
+    display: none;
+}
+.grounddetail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gorundbox{
+    position: relative;
+    height: 274px;
+    width: 205px;
+}
+.recommand_img1{
+    display: inline-block;
+    height: 206px;
+    border-radius: 5px;
+}
+.recommend_imgtext1{
+    display: inline-block;
+    height: 68px;
+    width: 205px;
+    margin: 0;
+    font-size: 13px;
+}
+.countplay1{
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    font-size: 11px;
+    color: #f4f4f4;
+    margin: 0;
+}
+
+
+
+
+/*
+.countplay1{
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    font-size: 11px;
+    color: #f4f4f4;
+    margin: 0;
+}
+.recommand_img1{
+    height: 206px;
+    width: 205px;
+    border-radius: 5px;
+} */

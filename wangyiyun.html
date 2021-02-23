@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYY's_NeteaseCloudMusic</title>
+    <link rel="stylesheet" type="text/css" href="wangyiyun1.css">
+    <link rel="stylesheet" type="text/css" href="wangyiyun2.css">
+    <link rel="stylesheet" type="text/css" href="wangyiyun3.css">
+    <link rel="stylesheet" type="text/css" href="lunbotu.css">
+    <link rel="stylesheet" type="text/css" href="playpage.css">
+</head>
+
+<body>
+    <div class="nav">
+        <img src="pic/wangyiyunlogo.jpg" alt="" class="wangyiyunlogo">
+        <span class="searchlogo"><img src="pic/searchlogo.jpg" alt=""></span>
+        <input type="text" class="search" value="">
+        <div class="log" onclick='openlogfunc()'>
+            <img src="./pic/nimingtouxiang.jpg" class="touxiang">
+            <span class="logstatus">未登录</span>
+            <img src="./pic/xiatrangle.jpg" class="xiatrangle">
+        </div>
+    </div>
+    <div class="searchhot">
+        <p class="resoubang">热搜榜</p>
+        <ul class="searchhotdetail">
+            <li class="searchhang"><span class="searchnumber rednumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber rednumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber rednumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+            <li class="searchhang"><span class="searchnumber"></span><span class="searchtopword"></span><span
+                    class="searchhowmany"></span><span class="searchbottomword"></span></li>
+        </ul>
+
+    </div>
+    <div>
+        <div class="logfunc">
+            <img src="./pic/logx.jpg" class="logx" onclick="exitxx()">
+            <img src="./pic/logpic.jpg" class="logpic">
+            <div class="form">
+                <div class="phonebox">
+                    <img src="./pic/phonepic.jpg" class="phonepic">
+                    <input type="text" class="phonenumber" placeholder='请输入手机号'>
+                </div>
+                <div class="passwordbox">
+                    <img src="./pic/passwordpic.jpg" class="passwordpic">
+                    <input type="password" class="password" placeholder='请输入密码'>
+                </div>
+            </div>
+            <div class="logjian"><span id="loggggg">登录</span></div>
+        </div>
+    </div>
+    <ul class="function2">
+        <li><img src="pic/mini.jpg" alt=""></li>
+        <li><img src="pic/small.jpg" alt=""></li>
+        <li><img src="pic/minimize.jpg" alt=""></li>
+        <li><img src="pic/exit.jpg" alt=""></li>
+    </ul>
+    </div>
+
+    <div class="left">
+        <div class="function3">
+            发现音乐
+        </div>
+        <span class="function4top">
+            创建的歌单
+            <img src="./pic/gedantrangle.jpg" class="gedantrangle">
+        </span>
+        <ul class="function4">
+        </ul>
+    </div>
+
+    <div class="right">
+        <div class="rightpersonalized">个性推荐</div>
+        <div class="rightplaylist">歌单</div>
+        <div class="rightxiaogezi"></div>
+        <div class="lunbo">
+            <div class="lunboleft">
+                <span class="lunboleft1">
+                    < </span>
+            </div>
+            <div class="lunboright">></div>
+            <ul class="lunbocontent">
+                <li class="lunbocontentfirst"><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+                <li><img src="./pic/recommend_img.png" alt="" class="lunbopic"></li>
+            </ul>
+        </div>
+        <ul class="circlepart">
+            <li class="circle1"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+            <li class="circle"></li>
+        </ul>
+        <div class="recommand">
+            <p>推荐歌单 ></p>
+            <div class="recommand_detail">
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+                <span class="box" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img">
+                    <p class="countplay"></p>
+                    <p class="recommend_imgtext"></p>
+                </span>
+            </div>
+        </div>
+        <div class="playground">
+            <div class="grounddetail">
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+                <span class="gorundbox" onclick="showplaylistdetail(this.title)" title="">
+                    <img src="./pic/recommend_img.png" alt="" class="recommand_img1">
+                    <p class="countplay1"></p>
+                    <p class="recommend_imgtext1"></p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="playlistdetail">
+        <img src="./pic/recommend_img.png" alt="" class="playlistpic1">
+        <div id="gedanmingzi">
+            歌单
+        </div>
+        <div id='playlistname'></div>
+        <div id="ceatordetail">
+            <img src="./pic/recommend_img.png" alt="" class="creatorpic">
+            <span class="creatorname"></span>
+        </div>
+        <div id="shu">
+            <span id="gequshu"></span>
+            <span id="bofangliang"></span>
+        </div>
+
+        <ul class="playlistdetailicon">
+            <li class="gequliebiao">歌曲列表</li>
+            <li class="pinlun">评论</li>
+        </ul>
+        <div class="xiaogeziii"></div>
+
+        <div class="recommend_icon">
+            <span class="yinyuebiaoti">音乐标题</span>
+            <span class="geshou">歌手</span>
+            <span class="zhuanji">专辑</span>
+            <span class="shichang">时长</span>
+        </div>
+        <ul class="allsong">
+        </ul>
+        <div class="comment">
+            <ul class="allcomment">
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="searchlistdetail">
+        <div>
+            <span class="yinyuebiaoti shangyi">音乐标题</span>
+            <span class="geshou shangyi">歌手</span>
+            <span class="zhuanji shangyi">专辑</span>
+            <span class="shichang shangyi">时长</span>
+        </div>
+        <ul class="allsong2">
+
+        </ul>
+    </div>
+
+
+    <div class="footer">
+        <audio class="audio" title="">
+            <source src="" type="audio/mp3" />
+        </audio>
+        <div class="footsongdetail">
+            <img src="./pic/footsong.png" class="footimg">
+            <span class="footsongname"></span>
+            <span class="footsinger"></span>
+        </div>
+        <div class="playfun">
+            <img src="./pic/lastsong.jpg" alt="" class="lastsongbtn">
+            <img src="./pic/playbtn.jpg" class="playandstopbtn" onclick="playandstop()">
+            <img src="./pic/nextsong.jpg" alt="" class="nextsongbtn">
+        </div>
+        <div class="progress">
+            <span class="currenttime">00:00</span>
+            <div class="progressbar"></div>
+            <span class="songtime">00:00</span>
+        </div>
+        <div class="progressball"></div>
+        <div>
+            <img src="./pic/laba.jpg" class="laba">
+
+            <div>
+                <div class="huatiao"></div>
+                <div class="ball"></div>
+            </div>
+        </div>
+    </div>
+    <div class="playpage">
+        <span class="playpagesongname"></span>
+        <span class="playpagealsin">
+            <span class="playpagealbumname1">专辑：</span> <span class="playpagealbumname"></span>
+            <span class="playpagesinger1">歌手：</span> <span class="playpagesinger"></span>
+        </span>
+        <img src="pic/kaiguancenter.png" class="kaiguancenter">
+        <img src="pic/kaiguan.png" class="kaiguan">
+        <img src="./pic/CD.jpg" class="cd" id="cd">
+        <img src="" class="playpagepic" id="playpagepic">
+        <div class="lyric"></div>
+    </div>
+
+    <script type="text/javascript" src="js1.js"></script>
+    <script type="text/javascript" src="list.js"></script>
+    <script type="text/javascript" src="log.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+    <script type="text/javascript" src="lunbo.js"></script>
+    <script type="text/javascript" src="playdetail.js"></script>
+    <script type="text/javascript" src="footer.js"></script>
+    <script type="text/javascript" src="md5.js"></script>
+
+</body>
+
+</html>

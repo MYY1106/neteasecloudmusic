@@ -1,0 +1,85 @@
+.lunbo {
+    position: absolute;
+    left: 350px;
+    top: 70px;
+    width: 540px;
+    height: 198px;
+    overflow: hidden;
+}
+
+.lunbocontent {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 198px;
+    display: flex;
+    position: absolute;
+
+}
+
+.lunbopic {
+    width: 540px;
+    height: 198px;
+    border-radius: 7px;
+}
+
+.lunboleft {
+    z-index: 1000;
+    opacity: 0.4;
+    position: absolute;
+    top: 84px;
+    border-radius: 50%;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    color: #fefefe;
+    font-size: 20px;
+    background-color: #cccccc;
+    display: none;
+}
+.lunboleft1{
+    position: absolute;
+    left: 7px;
+}
+.lunboright {
+    z-index: 1000;
+    opacity: 0.4;
+    position: absolute;
+    top: 84px;
+    left: 510px;
+    border-radius: 50%;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: #fefefe;
+    background-color: #cccccc;
+    display: none;
+    text-indent: 8px;
+}
+
+.circlepart {
+    list-style: none;
+    display: flex;
+    width: 150px;
+    height: 6px;
+    justify-content: space-between;
+    position: absolute;
+    left: 510px;
+    top: 282px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #e6e6e6;
+}
+
+.circle1 {
+    background-color: #ec4141;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
