@@ -14,21 +14,19 @@ function playsongdetail() {
             singer = res.ar[0].name
             picurl = res.al.picUrl
             document.querySelector('.playpagesongname').innerHTML = songname
-            document.querySelector('.playpagealbumname').innerHTML = albumname
-            document.querySelector('.playpagesinger').innerHTML = singer
+            document.querySelector('.playpagealbumname').innerHTML = `${albumname}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`
+            document.querySelector('.playpagesinger').innerHTML = `${singer}`
             document.querySelector('.playpagepic').src = picurl
             document.querySelector('.lyric').innerHTML = lyric.replace(/\[.+?\]/g, "<br>")
         })
     })
     document.querySelector('.nextsongbtn').addEventListener('click', function () {
         setTimeout(function () {
-            console.log(document.querySelector('.audio').title);
             playsongdetail()
         }, 500)
     })
     document.querySelector('.lastsongbtn').addEventListener('click', function () {
         setTimeout(function () {
-            console.log(document.querySelector('.audio').title);
             playsongdetail()
         }, 500)
     })
