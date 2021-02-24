@@ -111,7 +111,7 @@ document.querySelector('.rightplaylist').onclick = function () {
     document.querySelector('.lunbo').style.display = 'none'
     document.querySelector('.circlepart').style.display = 'none'
     document.querySelector('.playground').style.display = 'block'
-    ajax(`/top/playlist?limit=100&order=hot`, function (res) {
+    ajax(`/top/playlist?limit=75&order=hot`, function (res) {
         let result = res.playlists;
         console.log(result);
         let recommand_playCount = [];
