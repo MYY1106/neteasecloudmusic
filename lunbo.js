@@ -2,12 +2,10 @@
 document.querySelector('.lunbo').addEventListener('mouseenter', function () {
     document.querySelector('.lunboleft').style.display = 'block'
     document.querySelector('.lunboright').style.display = 'block'
-
 })
 document.querySelector('.lunbo').addEventListener('mouseleave', function () {
     document.querySelector('.lunboleft').style.display = 'none'
     document.querySelector('.lunboright').style.display = 'none'
-
 })
 
 
@@ -15,7 +13,7 @@ document.querySelector('.lunbo').addEventListener('mouseleave', function () {
 let lunboautoplay = setInterval(function () {
     document.querySelector('.lunbocontent').style.left = document.querySelector('.lunbocontent').offsetLeft - 540 + 'px'
     lunboarrowi++;
-    if (lunboarrowi == 10) {
+    if (lunboarrowi == 9) {
         document.querySelector('.lunbocontent').style.left = 0 + 'px'
         lunboarrowi = 0
     }
@@ -56,7 +54,8 @@ for (let circlei = 0; circlei < document.querySelector('.circlepart').children.l
 //网络请求得到banner图
 let lunbocontentfunc = (res) => {
     res = res.banners
-    for (let i = 0; i < res.length; i++) {
+    console.log(res);
+    for (let i = 0; i < 9; i++) {
         document.querySelectorAll('.lunbopic')[i].src = res[i].imageUrl
     }
     let lastfirst = document.querySelector('.lunbocontentfirst').cloneNode(true)
@@ -69,7 +68,7 @@ document.querySelector('.lunboright').addEventListener('click', function () {
     clearInterval(lunboautoplay)
     document.querySelector('.lunbocontent').style.left = document.querySelector('.lunbocontent').offsetLeft - 540 + 'px'
     lunboarrowi++;
-    if (lunboarrowi == 10) {
+    if (lunboarrowi == 9) {
         document.querySelector('.lunbocontent').style.left = 0 + 'px'
         lunboarrowi = 0
     }
@@ -80,7 +79,7 @@ document.querySelector('.lunboright').addEventListener('click', function () {
     lunboautoplay = setInterval(function () {
         document.querySelector('.lunbocontent').style.left = document.querySelector('.lunbocontent').offsetLeft - 540 + 'px'
         lunboarrowi++;
-        if (lunboarrowi == 10) {
+        if (lunboarrowi == 9) {
             document.querySelector('.lunbocontent').style.left = 0 + 'px'
             lunboarrowi = 0
         }
@@ -96,7 +95,7 @@ document.querySelector('.lunboleft').addEventListener('click', function () {
     lunboarrowi--;
     if (lunboarrowi == -1) {
         document.querySelector('.lunbocontent').style.left = -4860 + 'px'
-        lunboarrowi = 9
+        lunboarrowi = 8
     }
     for (let i = 0; i < document.querySelector('.circlepart').children.length; i++) {
         document.querySelector('.circlepart').children[i].className = 'circle'
@@ -105,7 +104,7 @@ document.querySelector('.lunboleft').addEventListener('click', function () {
     lunboautoplay = setInterval(function () {
         document.querySelector('.lunbocontent').style.left = document.querySelector('.lunbocontent').offsetLeft - 540 + 'px'
         lunboarrowi++;
-        if (lunboarrowi == 10) {
+        if (lunboarrowi == 9) {
             document.querySelector('.lunbocontent').style.left = 0 + 'px'
             lunboarrowi = 0
         }
