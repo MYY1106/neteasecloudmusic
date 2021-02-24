@@ -136,7 +136,6 @@ function showplaylistdetail(playlistid) {
         ajax(`/comment/playlist?id=${playlistid}&limit=100`, function (res) {
             comment = res.comments;
             allcomment = document.querySelector('.allcomment')
-            console.log(comment);
             let len = comment.length
             for (let i = 0; i < len; i++) {
                 console.log(comment[i].content);
