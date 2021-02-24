@@ -6,7 +6,6 @@
     height: 198px;
     overflow: hidden;
 }
-
 .lunbocontent {
     list-style: none;
     margin: 0;
@@ -16,13 +15,11 @@
     position: absolute;
 
 }
-
 .lunbopic {
     width: 540px;
     height: 198px;
     border-radius: 7px;
 }
-
 .lunboleft {
     z-index: 1000;
     opacity: 0.4;
@@ -58,7 +55,6 @@
     display: none;
     text-indent: 8px;
 }
-
 .circlepart {
     list-style: none;
     display: flex;
@@ -69,14 +65,12 @@
     left: 510px;
     top: 282px;
 }
-
 .circle {
     border-radius: 50%;
     width: 6px;
     height: 6px;
     background-color: #e6e6e6;
 }
-
 .circle1 {
     background-color: #ec4141;
     border-radius: 50%;

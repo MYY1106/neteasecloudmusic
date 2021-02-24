@@ -63,6 +63,7 @@ let lunbocontentfunc = (res) => {
 }
 ajax(`/banner?type=0`, lunbocontentfunc)
 
+
 //轮播图的左右箭头
 document.querySelector('.lunboright').addEventListener('click', function () {
     clearInterval(lunboautoplay)
